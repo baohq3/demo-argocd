@@ -28,32 +28,6 @@ spec:
             - /bin/sh
             - -c
             - |
-            echo "Hello bro"
-            sleep infinity
-#          ports:
-#            - name: http
-#              containerPort: {{ .Values.containerPort }}
-#              protocol: TCP
-#          livenessProbe:
-#            httpGet:
-#              path: /
-#              port: http
-#          readinessProbe:
-#            httpGet:
-#              path: /
-#              port: http
-#          resources:
-#{{ toYaml .Values.resources | indent 12 }}
-#    {{- with .Values.nodeSelector }}
-#      nodeSelector:
-#{{ toYaml . | indent 8 }}
-#    {{- end }}
-#    {{- with .Values.affinity }}
-#      affinity:
-#{{ toYaml . | indent 8 }}
-#    {{- end }}
-#    {{- with .Values.tolerations }}
-#      tolerations:
-#{{ toYaml . | indent 8 }}
-#    {{- end }}
-#
+              echo "Hello bro"
+              sleep infinity
+            
