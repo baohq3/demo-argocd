@@ -28,6 +28,6 @@ spec:
             - /bin/sh
             - -c
             - |
-              echo "Hello bro v2"
+              echo "Hello bro v3"
               sleep infinity
             
